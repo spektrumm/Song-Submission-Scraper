@@ -30,3 +30,14 @@ def listSort(strList, ytList, spotList, appList):
         else:
             appList.append(tempVal)
         i += 1
+
+
+def writeFile(filename, aList):
+    with open(filename, 'a') as openFile:
+        i = 0
+        for item in aList:
+            strVal = aList[i]
+            openFile.write(strVal)
+            openFile.write('\n')
+            i += 1
+    print(f'Contents written to {filename}')

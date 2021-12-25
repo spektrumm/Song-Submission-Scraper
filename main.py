@@ -46,3 +46,13 @@ print(strList)
 fn.listSort(strList, ytList, spotList, appList)
 print(f'youtube list = {ytList}')
 print(f'spotify list = {spotList}')
+
+if len(spotList) != 0:
+    fn.writeFile('spotifySongs.txt', spotList)
+else:
+    print(f'No new contents present in spotList')
+
+if len(ytList) != 0:
+    fn.writeFile('youtubeSongs.txt', ytList)
+else:
+    print(f'No new contents present in ytList')
