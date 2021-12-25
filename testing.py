@@ -33,21 +33,21 @@ numTest = spotCount + 1
 print(numTest)
 
 
-async def check(ctx):
+# async def check(ctx):
 
-    updatedRowCount = len(sheet_instance.get_all_values())
+#     updatedRowCount = len(sheet_instance.get_all_values())
 
-    timestampChk = sheet_instance.cell(col=1, row=updatedRowCount)
-    categoryChk = sheet_instance.cell(col=2, row=updatedRowCount)
-    usernameChk = sheet_instance.cell(col=3, row=updatedRowCount)
+#     timestampChk = sheet_instance.cell(col=1, row=updatedRowCount)
+#     categoryChk = sheet_instance.cell(col=2, row=updatedRowCount)
+#     usernameChk = sheet_instance.cell(col=3, row=updatedRowCount)
 
-    convertTime = str(timestampChk)
-    convertCat = str(categoryChk)
-    convertUser = str(usernameChk)
+#     convertTime = str(timestampChk)
+#     convertCat = str(categoryChk)
+#     convertUser = str(usernameChk)
 
-    if updatedRowCount > rawRowCount:
-        await ctx.send(f'New bug report! **Timestamp:** {convertTime[13:-2]}, **Category:** {convertCat[12:-2]}, **Submitted by:** {convertUser[12:-2]} **Link:** https://docs.google.com/forms/d/1tU7OR2U0LOkB6cuC-JppTNyxjcLBsewWpBp2Meg8LwE/edit#responses')
-        print('New bug report!')
-    else:
-        await ctx.send('No new bug reports.')
-        print('No new bug reports.')
+#     if updatedRowCount > rawRowCount:
+#         await ctx.send(f'New bug report! **Timestamp:** {convertTime[13:-2]}, **Category:** {convertCat[12:-2]}, **Submitted by:** {convertUser[12:-2]} **Link:** https://docs.google.com/forms/d/1tU7OR2U0LOkB6cuC-JppTNyxjcLBsewWpBp2Meg8LwE/edit#responses')
+#         print('New bug report!')
+#     else:
+#         await ctx.send('No new bug reports.')
+#         print('No new bug reports.')

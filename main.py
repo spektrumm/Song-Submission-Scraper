@@ -29,11 +29,19 @@ appList = []
 
 
 strList = []
+startNum = 0
 
 
+def getRowStart(filename):
+    with open(filename, 'r') as saveFile:
+        startNum = saveFile.readline()
+
+# getRowStart(save.txt)
+
+
+# define a function to step through the rows in the sheet based off of the acquired start value from the save file
 def stepThroughSheet(worksheet, lengthCount, aList, rowStart):
     i = rowStart + 1
-    #nsList = []
     if rowStart < lengthCount:
         enumIndex = lengthCount - rowStart
         for n in range(enumIndex):
@@ -42,17 +50,12 @@ def stepThroughSheet(worksheet, lengthCount, aList, rowStart):
             for value in range(len(splitVal)):
                 noSpaceStr = splitVal[value].replace(' ', '')
                 aList.append(noSpaceStr)
-                # print(aList)  # debug
-
             i += 1
-        # return(spotList)
     elif rowStart > lengthCount:
         print(
             f'Index out of range error, rowStart is = {rowStart}, and lengthCount is = {lengthCount}')
-        # return(None)
     else:
         print("rowStart indexing value is equal to the length; no new values have been added to the sheet.")
-        # return(None)
 
 
 stepThroughSheet(ws, rawRowCount, strList, 1)
@@ -64,11 +67,10 @@ def listSort(strList):
     for submissions in strList:
         tempVal = strList[i]
         print(f' the current indexed item is = {tempVal}')
-        if 'youtube' or 'youtu.be' in tempVal:
-            # ! all values being appended to this list for some reason
+        if 'youtu.be' in str(tempVal) or 'youtube' in str(tempVal):
             ytList.append(tempVal)
-        elif 'spotify' in tempVal:
-            spotList.append(tempVal)  # ? not appending values at all?
+        elif 'spotify' in str(tempVal):
+            spotList.append(tempVal)
         else:
             appList.append(tempVal)
         i += 1
