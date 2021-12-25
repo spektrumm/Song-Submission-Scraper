@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "discord-bug-report-logger",
+  "private_key_id": "f2d4787573878679b716d9651e62f7212941d4be",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDTUQC/r0MV1PVX\n7RVW09pX31LG382A++r0aUNLH2DPBLuRH/WWUlTRa1z70uXlgkR4U3KH82ZoiaRB\nVmix2KT1eKBomPidogSpzMON1QDYy4t1IzzRVG+PCzfwNaH0OBN7flZbO9mwb0Zz\nQWQBbnemuIZVK6kbJ1PDQhpzAFo7kqWzp6d1k623qQu4K+ISyREq2xq52fOknQtT\nVqw8RX0kmaR4S1nBDlD7W4P+pgOVwxpTgTOpycUB4a78Q/8fGpXVuRfWUKwx9e02\nQmxNAcXvhSYnQrlF7veDiXyGqPvqcty+5KbXetYXtD2zGGlo1U4JyzG1sz3yK2Ff\nRUPf9IgDAgMBAAECggEADJsQ7d5hJJzDE/8vHjJeHI7Ua8uvASpF/lWHL6SMDF1u\naP5ckp6Ps7xxXA5dK39FYV4s/2IsMkE/vKwQa8eOM5yCCStS7WhcWdq+safKuKQP\nyimTd7NPQlu7dwdkBWMQ+nVzZlbgKg/BRp/YfONfnOD2Fn+Xw2hprUS0ujaDq3j8\nx4a2m0lmBltpD95QBefXz9WbF2ppiHCtRg6F4owx3xxBWWtjXYItEVkD8wlbtKdq\n5GrwsU9OGk+0BzTdJa2Zuy5i6faXa7l1m4jQuldZ4+pJlW0RiA1SgCGq+wuKwAXK\nLcL522j0Fc+TFbfG/4KUNpPMJ6fX0kDSW7dm7csy6QKBgQDxjaBnHrBTqt63fMNg\nmlF4z32BSDmNCiu1P3mt0bQyE32J5GUKJD76qbc2Ah6OmDJnI1maw8BfSWlCvs55\ndcOQe5Zmwzecoop7s8E3OWTIHEQQ1qhwSOgCRuAZ7hUTGrPv7jRsSW0DXwSeNIFx\nAwa3aQX1PW7ahiFLWlns91CIGQKBgQDf9G0yhdaHm72hg8YFPOND6CgB83GE9rFD\n02CVLs95JVXUE0+m8FyTaV+YVlmBfyUkvmybiMIov+pOQWUg6ljLexClMxXTuOCZ\n0GZogIldWGY2G2v1sCDzX67pNknc/OSH8ALbz4Pi+e2K6gVsaYBr7H/HIUZreE7N\nM4ZsRpDEewKBgQCRvumUrtCnewbs4Wulgxc7dL5+XgzTi9p5fvY1Kb23JUlvBQ7u\nApa5eeOgw8CaOzzWPF8ZYZlWJR5M9oHwiVzZdah3Er0gVnaGUxx27LthfqSXIF37\nehH7JbacDqpKn6cIUsrwt5D+IrvPlVCw1qmbytOceFfFpH68T6TItSSzKQKBgHpd\nMszIE89EaPg255s1CXexASsPuJbNs0070SmxyeqHW73kT0EHU423pWO2ynDW55SL\n9wuETZG2Sm83i+nQIXQMaavZnbNw8EcadtniYSt/gVlO4k37TgWr4gXKg9Ea3ELq\nAKXZXFZH+GJOO2hgvKo7LhW/OJq/wU6dOHUwmSjBAoGAOsq2tGOXWVdc99E0+98F\nL4nzX+m5dbcbBWqINobFjTkR4guWl7q8Ti56IyibOaYgaKlmTQsDbRuV73g6Oc2M\njbKgk01rlAN7hdNu3QfmPaXAf0gQQgPdd7kT2qom7wqDqzvYJxhr9pzJSsvfQ9bY\nHhLX8aGfXqhZmTaRNjLVJ/g=\n-----END PRIVATE KEY-----\n",
+  "client_email": "song-submission@discord-bug-report-logger.iam.gserviceaccount.com",
+  "client_id": "114641475121999827003",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/song-submission%40discord-bug-report-logger.iam.gserviceaccount.com"
+}
