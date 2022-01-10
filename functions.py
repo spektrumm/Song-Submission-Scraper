@@ -38,6 +38,25 @@ def writeFile(filename, aList):
         for item in aList:
             strVal = aList[i]
             openFile.write(strVal)
+            openFile.write(', unchecked')
             openFile.write('\n')
             i += 1
     print(f'Contents written to {filename}')
+
+
+def getStart(filename):
+    with open(filename, 'r') as saveFile:
+        savedValue = filename.readline()
+        print(f'{savedValue} is the last saved length of the submissions form.')
+
+
+def compareLength(oldLength, currentLength, filename):
+    if oldLength > currentLength:
+        print(f'Old length exceeds current... was a previous submission removed?')
+    elif currentLength > oldLength:
+        print(
+            f'Current form list exceeds length of recorded... New submissions are present.')
+        with open(filename, 'w') as newRecord:
+            filename.write(currentLength)
+    else:
+        print(f'Current and Recorded length are equal... No new submissions.')
