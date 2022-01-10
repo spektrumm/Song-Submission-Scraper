@@ -30,17 +30,10 @@ appList = []
 
 
 strList = []
-startNum = 0
 
+startNum = fn.getStart('savedLength.txt')
 
-def getRowStart(filename):
-    with open(filename, 'r') as saveFile:
-        startNum = saveFile.readline()
-
-# getRowStart(save.txt)
-
-
-fn.stepThroughSheet(ws, rawRowCount, strList, 1)
+fn.stepThroughSheet(ws, rawRowCount, strList, startNum)
 print(strList)
 
 fn.listSort(strList, ytList, spotList, appList)
@@ -56,3 +49,5 @@ if len(ytList) != 0:
     fn.writeFile('youtubeSongs.txt', ytList)
 else:
     print(f'No new contents present in ytList')
+
+fn.compareLength(startNum, rawRowCount, 'savedLength.txt')

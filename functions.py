@@ -1,5 +1,6 @@
 # define a function to step through the rows in the sheet based off of the acquired start value from the save file
-def stepThroughSheet(worksheet, lengthCount, aList, rowStart):
+def stepThroughSheet(worksheet, lengthCount, aList, startNum):
+    rowStart = int(startNum)
     i = rowStart + 1
     if rowStart < lengthCount:
         enumIndex = lengthCount - rowStart
@@ -46,17 +47,19 @@ def writeFile(filename, aList):
 
 def getStart(filename):
     with open(filename, 'r') as saveFile:
-        savedValue = filename.readline()
+        savedValue = saveFile.readline()
         print(f'{savedValue} is the last saved length of the submissions form.')
+        return savedValue
 
 
-def compareLength(oldLength, currentLength, filename):
+def compareLength(oldNum, currentLength, filename):
+    oldLength = int(oldNum)
     if oldLength > currentLength:
         print(f'Old length exceeds current... was a previous submission removed?')
     elif currentLength > oldLength:
         print(
             f'Current form list exceeds length of recorded... New submissions are present.')
         with open(filename, 'w') as newRecord:
-            filename.write(currentLength)
+            newRecord.write(str(currentLength))
     else:
         print(f'Current and Recorded length are equal... No new submissions.')
