@@ -63,3 +63,8 @@ def compareLength(oldNum, currentLength, filename):
             newRecord.write(str(currentLength))
     else:
         print(f'Current and Recorded length are equal... No new submissions.')
+
+
+def checkIn(filename, aList):
+    with open(filename, 'r') as listFile:
+        pass
